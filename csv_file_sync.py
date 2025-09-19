@@ -6,10 +6,10 @@ download_folder = "YOUR_FILE_DIRECTORY_PATH"
 csv_file = "YOUR_CSV_FILE_PATH"
 
 playlist_tracks = set()
-with open(download_folder + csv_file, newline='', encoding='utf-8') as f:
+with open(csv_file, newline='', encoding='utf-8') as f:
     reader = csv.reader(f)
     for row in reader:
-        row = row[:-1]y
+        row = row[:-1]
         filename = f"{row[1]} - {row[0]}.mp3"
         playlist_tracks.add(filename)
 
