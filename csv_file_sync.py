@@ -1,9 +1,9 @@
 import os
 import csv
 
-download_folder = "/home/user/Music/test/"
+download_folder = "YOUR_FILE_DIRECTORY_PATH"
 
-csv_file = "syntax-error.csv"
+csv_file = "YOUR_CSV_FILE_PATH"
 
 playlist_tracks = set()
 with open(download_folder + csv_file, newline='', encoding='utf-8') as f:
